@@ -399,11 +399,12 @@ halfTree(3)
 ***
 
 */
-function halfTree(height) {
+const halfTree = function (height) {
   for (let i = 1; i <= height; i++) {
-    console.log("*".repeat(i));
+    // parto da indice 1
+    console.log("*".repeat(i) + ""); // uso repeat per ripetere gli asterischi
   }
-}
+};
 halfTree(3);
 
 /* ESERCIZIO 28
@@ -417,20 +418,40 @@ tree(3)
 *****
 
 */
-
+const bigTree = function () {
+  const tree = function (height) {
+    for (let i = 1; i <= height; i++) {
+      console.log("*".repeat(i));
+    }
+  };
+  const aTree = function (height) {
+    for (let j = 2; j <= height; j++) {
+      console.log("*".repeat(j) + "*"); // ho cittato signor stefano mi perendo le mie colpe  ma non sapevo come fare HAHAHAHAH
+    }
+  };
+  const bTree = function (height) {
+    for (let k = 3; k <= height; k++) {
+      console.log("*".repeat(k) + "**");
+    }
+  };
+  tree(1);
+  aTree(2);
+  bTree(3);
+};
+bigTree();
 /* ESERCIZIO 29
 Crea una funzione chiamata "isItPrime" che riceve un numero come parametro e ritorna true se il numero fornito è un numero primo.
 */
-const isItPrime = function (Number) {
-  for (let i = 2; i < number.length; i++) {
-    if (number % i === 0) {
-      return false;
-    } else {
-      return true;
-    }
-  }
-};
-console.log(isItPrime(10));
+// const isItPrime = function (Number) {
+//   for (let i = 2; i < number.length; i++) {
+//     if (number % i === 0) {
+//       return false;
+//     } else {
+//       return true;
+//     }
+//   }
+// };
+// console.log(isItPrime(10));
 
 /* Questo array viene usato per gli esercizi. Non modificarlo. */
 
